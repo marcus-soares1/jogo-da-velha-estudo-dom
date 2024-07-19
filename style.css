@@ -1,0 +1,133 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --font-color: #fff;
+    --player-one-color: rgb(54, 129, 31);
+    --player-two-color: rgb(189, 7, 7);
+    --background-color: rgb(69, 0, 55);
+    --background-color-option: rgb(0, 0, 0);
+    --button-color: rgb(85, 5, 98);
+    --button-color-option: rgb(120, 5, 138);
+    --disable-color-button: rgb(53, 0, 61);
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+main
+{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+h1
+{
+    padding: 1rem;
+}
+
+div > div
+{
+    display: inline-block;
+    background-color: black;
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+    margin: 0.5rem 3rem;
+}
+
+#playerOne
+{
+    background-color: var(--player-one-color);
+
+}
+
+#playerTwo
+{
+    background-color: var(--player-two-color);
+}
+
+input
+{
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    height: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+h3
+{
+    margin: 0.7rem 0;
+    font-size: 2rem;
+    display: none;
+}
+
+#hashConteiner
+{
+    position: absolute;
+    left: 50vw;
+    top: 60vh;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--button-color);
+    border-radius: 1rem;
+    border: 0.2rem solid;
+    border-color: black;
+    padding: 1rem;
+}
+
+
+
+.button, #startButton
+{
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+
+    color: var(--font-color);
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 0.8rem;
+
+    transition: 0.25s;
+}
+
+.button:hover
+{
+    background-color: var(--button-color-option);
+}
+
+#startButton
+{
+    width: 8rem;
+    height: 3rem;
+
+    font-size: 1.8rem;
+    background-color: black;
+
+    transition: 0.25s;
+}
+
+#startButton:hover
+{
+    background-color: rgb(104, 97, 97);
+
+}
+
+.disabledButton
+{
+    background-color: var(--disable-color-button);
+    display: disabled;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JOGO DA VELHA</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Tic-tac-toe</h1>
+        <section id="mainMenu">
+            <div id="players">
+                <div id="playerOne">
+                    <h2><label for="playerOneName">Nome do jogador 1 (X):</label></h2>
+                    <input id="playerOneName" name="playerOneName">
+
+                </div>
+                <div id="playerTwo">
+                    <h2><label for="playerTwoName">Nome do jogador 2 (O):</label></h2>
+                    <input id="playerTwoName" name="playerTwoName">
+                </div>
+            </div>
+            <button id="startButton">Start</button>
+            <h3>Jogador X venceu!</h3>
+        </section>
+
+        <section id="hashConteiner">
+            <table>
+                <tr>
+                    <td><button class="button" data-position="0.0"></button></td>
+                    <td><button class="button" data-position="0.1"></button></td>
+                    <td><button class="button" data-position="0.2"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" data-position="1.0"></button></td>
+                    <td><button class="button" data-position="1.1"></button></td>
+                    <td><button class="button" data-position="1.2"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" data-position="2.0"></button></td>
+                    <td><button class="button" data-position="2.1"></button></td>
+                    <td><button class="button" data-position="2.2"></button></td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+</body>
+</html>
